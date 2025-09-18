@@ -1,0 +1,460 @@
+/* universal */
+
+a{
+  text-decoration: none;
+}
+.text-2-footer{
+  font-size: 25px;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-color: #a6fbff; 
+}
+
+footer a{
+  color: black;
+}
+footer p{
+  font-family: "Playfair Display", serif;
+}
+footer #privacy-policy{
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+/* universal */
+
+/* navbar css */
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 100px; /* To ensure content doesn't get hidden under the fixed header */
+  }
+  .search-form {
+      position: relative;
+      display: inline-block; /* Menjadikan search-form menjadi inline-block */
+  }
+
+  .search-form .input-group {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+  }
+
+  .search-form .input-group-text {
+      display: inline-block; /* Menampilkan ikon pencarian */
+  }
+
+  .search-form .form-control {
+      width: 0;
+      transition: width 0.3s ease-in-out;
+      overflow: hidden;
+  }
+
+  .search-form.show-input .form-control {
+      width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+      transition: width 0.3s ease-in-out;
+  }
+
+  .dropdown {
+      display: none;
+  }
+}
+
+/* navbar css */
+
+/* crousel css */
+.custom-img {
+  width: 100px;
+  height: auto;
+}
+.carousel-inner .carousel-item img {
+  object-fit: cover;
+  height: 100%; /* Menggunakan tinggi 100% untuk mengisi tinggi carousel */
+  width: 100%;
+}
+.carousel-caption {
+  align-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.carousel-caption h1,
+.carousel-caption p,
+.carousel-caption button {
+  max-width: 1000px; /* Lebar maksimum 80% dari kotak caption */
+  margin: 0 auto; /* Pusatkan teks dan tombol */
+}
+.carousel-caption button {
+  margin-top: 10px; /* Jarak antara paragraf dan tombol */
+}
+
+.berita-nav a{
+  text-decoration: underline;
+}
+
+.berita-nav div a img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.berita-nav p {
+  color: #ffffff;
+}
+
+.berita-nav p a {
+  color: rgb(227, 227, 43);
+}
+
+/* Custom CSS styling for login-crousel */
+.carousel-item.login-crousel .carousel-caption {
+  color: rgb(255, 255, 255); /* White text color */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'EB Garamond', serif; /* Menggunakan font Garamond */
+  background: rgba(0, 0, 0, 0.0);
+}
+
+.carousel-item.login-crousel .carousel-caption h2 {
+  font-size: 24px; /* Custom font size for h2 */
+}
+
+.carousel-item.login-crousel .carousel-caption button {
+  background-color: transparent; /* Ubah latar belakang tombol menjadi transparan */
+  border: 2px solid white; /* Tambahkan border putih pada tombol */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.carousel-item.login-crousel .carousel-caption button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Ubah latar belakang tombol menjadi semi-transparan saat disorot */
+}
+
+.carousel-item.login-crousel .carousel-caption p a{
+  color: #fff;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .carousel-item.login-crousel .carousel-caption {
+    top: 40%; /* Adjust top position */
+    transform: translate(-50%, -40%); /* Adjust translate for better alignment */
+    padding: 10px; /* Reduce padding */
+  }
+  
+  .carousel-item.login-crousel .carousel-caption h2 {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+
+  .carousel-item.login-crousel .carousel-caption button {
+    font-size: 16px; /* Adjust font size of button text */
+    padding: 5px 10px; /* Adjust padding for button */
+  }
+
+  .carousel-item.login-crousel .carousel-caption p {
+    font-size: 14px; /* Reduce font size of paragraph */
+  }
+}
+
+/* akhir */
+
+
+/* tentang css */
+.bottom-box {
+  background-image: linear-gradient(to bottom, #FFFFFF, #a6fbff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card {
+  margin-bottom: 20px;
+  margin-left: auto; /* Tengahkan kartu secara horizontal */
+  margin-right: auto; /* Tengahkan kartu secara horizontal */
+}
+
+.card.profile-card-1 {
+  height: 350px;
+  width: 300px; /* Atur lebar kartu sesuai kebutuhan */
+  /* Other styling properties for the card */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Pusatkan secara horizontal */
+}
+
+.card-tentang {
+  flex: 0 0 auto;
+  width: auto; /* Reset lebar kolom */
+  margin: 0 15px; /* Berikan margin untuk jarak antar kartu */
+}
+.accordion-body p {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.team_h1 {
+    text-align: center;
+}
+.profile-card-1 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    /* float: left; */
+    overflow: hidden;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    height:368px;
+    border:none;
+  }
+  .profile-card-1 .background {
+    width:100%;
+    vertical-align: top;
+    opacity: 0.9;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+     -webkit-transform: scale(1.8);
+    transform: scale(2.8);
+  }
+  .profile-card-1 .card-content {
+    width: 100%;
+    padding: 15px 25px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  .profile-card-1 .profile {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    opacity: 1;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%);
+  }
+
+  .profile-card-1 h2 {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size:25px;
+  }
+  .profile-card-1 h2 small {
+    display: block;
+    font-size: 15px;
+    margin-top:10px;
+  }
+  .profile-card-1 i {
+    display: inline-block;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      border: 1px solid #fff;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      margin:0 5px;
+  }
+  .profile-card-1 .icon-block{
+      float:left;
+      width:100%;
+      margin-top:15px;
+  }
+  .profile-card-1 .icon-block a{
+      text-decoration:none;
+  }
+  .profile-card-1 i:hover {
+    background-color:#fff;
+    color:#2E3434;
+    text-decoration:none;
+  }
+  .reversed .accordion-item {
+    order: -1; /* Reverse the order of accordion items */
+}
+/* Add your custom styles here */
+.accordion-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordion-item.active {
+  transform: scale(1.05);
+}
+
+.accordion-collapse.show {
+  display: block;
+}
+
+.accordion-collapse {
+  display: none;
+  padding: 15px;
+}
+/* tentang css */
+/* partai css */
+.btn-stretch {
+  width: calc(100% - 4px); /* Adjust padding (2px on each side) */
+  padding: 2px; /* Add padding */
+}
+
+.card-img-top {
+  display: none; /* Menghilangkan gambar yang ada di dalam kartu */
+}
+
+.card-img-top-calgub{
+  display: flex;
+}
+
+.card-partai {
+  background-size: cover;
+  background-position: center;
+  min-height: 290px; /* Atur tinggi minimum kartu */
+}
+
+.card-partai {
+  color: rgb(255, 254, 254); /* Mengatur warna teks menjadi putih */
+  position: relative; /* Menjadikan posisi kartu relatif untuk mengatur posisi absolut pada teks dan tombol */
+}
+
+.card-partai .card-body {
+  position: absolute; /* Mengatur posisi absolut untuk menempatkan teks dan tombol di bawah */
+  bottom: 0; /* Menempatkan teks dan tombol di bagian bawah */
+  width: 100%; /* Menyamakan lebar dengan kartu */
+  background-color: rgba(0, 0, 0, 0.3); /* Menambahkan lapisan transparan berwarna hitam di belakang teks dan tombol */
+  padding: 10px; /* Menambahkan padding untuk menjaga jarak dengan tepi kartu */
+}
+
+.card-partai .btn {
+  color: white; /* Mengatur warna teks tombol menjadi putih */
+  border: 1px solid white; /* Menambahkan border putih pada tombol */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.card-partai .btn:hover {
+  color: white; /* Mengatur warna teks tombol menjadi putih */
+  border: 1px solid white; /* Menambahkan border putih pada tombol */
+  background-color: rgba(0, 0, 0, 0.8); /* Menambahkan lapisan transparan berwarna hitam di belakang tombol */
+}
+
+
+/* partai css */
+/* kontak */
+#kontak{
+  background-color: #a6fbff; 
+  text-align: center; /* Mengatur teks dan elemen lainnya di dalam #kontak menjadi pusat */
+
+}
+#kontak h1{
+  font-family: 'EB Garamond', serif;
+}
+
+/* Mengatur lebar maksimum iframe agar sesuai dengan lebar layar */
+iframe {
+  max-width: 100%;
+}
+/* CSS untuk ukuran iframe pada layar desktop */
+@media screen and (min-width: 600px) {
+  iframe {
+      width: 580px;
+      height: 400px;
+  }
+}
+
+/* CSS untuk ukuran iframe pada layar mobile */
+@media screen and (max-width: 599px) {
+  iframe {
+      width: 350px;
+      height: 400px;
+  }
+}
+/* kontak */
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center; /* selalu fokus ke tengah gambar */
+}
+
+.carousel-caption h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.btn-warning {
+  background: linear-gradient(45deg, #ffc107, #ff9800);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-item img {
+    height: 90vh; /* hampir full screen */
+  }
+}
+
+/* Tablet landscape */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .carousel-item img {
+    height: 65vh; 
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .carousel-item img {
+    height: 45vh; 
+  }
+}
+
+.carousel-caption {
+  max-width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-caption h2 {
+    font-size: 1.4rem; /* lebih kecil */
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  .carousel-caption button {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+}

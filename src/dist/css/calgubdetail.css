@@ -1,0 +1,87 @@
+.profile-card-1 {
+    margin-top: 20px;
+}
+
+.profile-card-1 .profile {
+    width: 200px;
+    /* Sesuaikan ukuran gambar di sini */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Menjaga aspek rasio gambar */
+    margin: 20px auto;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+body {
+    padding-top: 100px;
+    /* To ensure content doesn't get hidden under the fixed header */
+    background-image: linear-gradient(to bottom, #FFFFFF, #a6fbff);
+}
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    background-color: #a6fbff;
+}
+
+footer a {
+    color: black;
+}
+
+footer p {
+    font-family: "Playfair Display", serif;
+}
+
+footer #privacy-policy {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 100px;
+        /* To ensure content doesn't get hidden under the fixed header */
+    }
+
+    .search-form {
+        position: relative;
+        display: inline-block;
+        /* Menjadikan search-form menjadi inline-block */
+    }
+
+    .search-form .input-group {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .search-form .input-group-text {
+        display: inline-block;
+        /* Menampilkan ikon pencarian */
+    }
+
+    .search-form .form-control {
+        width: 0;
+        transition: width 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .search-form.show-input .form-control {
+        width: 200px;
+        /* Sesuaikan lebar sesuai kebutuhan */
+        transition: width 0.3s ease-in-out;
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
